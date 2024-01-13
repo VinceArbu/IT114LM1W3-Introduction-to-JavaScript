@@ -15,18 +15,47 @@ let numbers = [
 // Todo 3.1 Get the first, 5th, and last items in the numbers array.
 // Your code here
 
+/* 
+let first = numbers[0];
+let fifth = numbers[4];
+let last = numbers[numbers.length - 1];
+
+console.log("First element: " + first + "\n" + "5th element: " + fifth + "\n" + "Last element: " + last);
+*/
 // Todo 3.2 calculate the min, max, and the average of the numbers array
 // Your code here
+/* 
+let minimum = Math.min(...numbers);
+let maximum = Math.max(...numbers);
+let sum = numbers.reduce((a, b) => a + b);
+let avg = sum / numbers.length;
 
+console.log("Minimum value: " + minimum + "\n" + "Maximum value: " + maximum + "\n" + "Average: " + avg);
+*/
 // Checkpoint 3.1 How would you compare lists in python vs arrays in JavaScript
-// Answer: 
+// Answer: In Python, lists are used to store a sequence of values in the same data structure. 
+// They can be modified, indexed, sliced, and used in the program.
+// In JavaScript, an equivalent version of this data structure is called array.
+// Arrays are more powerful than lists but can be harder to work with. Lists are more flexible than arrays, 
+// as they can contain different types of data such as strings, numbers, and objects
+
 
 // Todo 3.3 Declare an object with information about IT114L (course code, name, units, number of students)
 // Your code here
 
+const IT114L = {
+    courseCode: "IT114L",
+    courseName: "Web Systems and Technologies (Laboratory)",
+    units: 3,
+    numberOfStudents: 39,
+};
+
+
 // Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
 // Your code here
+IT114L.professorName = "Job Lipat";
 
+console.log("My Professor: " + IT114L.professorName);
 // Todo 3.5 Declare and array of objects with information about the courses you are taking this term
 // Your code here
 
