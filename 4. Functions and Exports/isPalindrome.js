@@ -6,7 +6,4 @@ function isPalindrome(word) {
   }
 // Todo 4.6b Set the isPalindrome function as the default export of the module
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
-export default function isPalindrome(word) {
-    const reversedWord = word.split('').reverse().join('');
-    return word === reversedWord;
-  }
+export default isPalindrome;
